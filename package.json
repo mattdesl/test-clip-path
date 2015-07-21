@@ -1,0 +1,30 @@
+{
+  "name": "test-clip-path",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "uglify-js": "^2.4.23"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "browserify index.js | uglifyjs -cm > bundle.js"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/test-clip-path.git"
+  },
+  "homepage": "https://github.com/mattdesl/test-clip-path",
+  "bugs": {
+    "url": "https://github.com/mattdesl/test-clip-path/issues"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>test-clip-path</title>
+  <style>
+  figure {
+    display: inline-block;
+    background: red;
+    width: 100px;
+    height: 100px;
+  }
+  </style>
+</head>
+<body>
+  <figure class="one"></figure>
+  <figure class="two"></figure>
+  <script>
+    var figure1 = document.querySelector('.one')
+    var figure2 = document.querySelector('.two')
+    
+    console.log('Has clipPath?', ('clipPath' in figure1.style))
+    console.log('Has webkitClipPath?', ('webkitClipPath' in figure2.style))
+    
+    figure1.style.clipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)'
+    figure2.style.webkitClipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)'
+  </script>
+</body>
+</html>
